@@ -30,9 +30,12 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/theme/css/dashmix.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/theme/js/dashmix.app.min.js"
+            ]
           },
           "configurations": {
             "production": {
