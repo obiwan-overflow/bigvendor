@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+$colorTheme: #009A44;
+
+
+// header
+.bg-header-dark {
+    background-color: $colorTheme !important;
+}
+#page-container.page-header-dark #page-header {
+    background-color: $colorTheme !important;
+}

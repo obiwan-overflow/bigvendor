@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./vendor-lists.component.scss']
 })
 export class VendorListsComponent {
+  fakeArray = new Array(10);
+  ngOnInit() {
 
+  }
 }

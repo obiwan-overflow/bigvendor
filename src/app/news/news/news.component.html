@@ -1,0 +1,45 @@
+<!-- Main Container -->
+<main id="main-container">
+    <!-- Hero -->
+    <div class="bg-body-light">
+        <div class="content content-full">
+            <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+                <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">news</h1>
+                <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">news</li>
+                        <li class="breadcrumb-item active" aria-current="page">Detail</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- END Hero -->
+
+    <!-- Page Content -->
+    <div class="content">
+        <!-- Latest Orders + Stats -->
+        <div class="row">
+            <div class="col-md-4" *ngFor="let a of fakeArray; let index = index">
+                <a class="block block-rounded block-link-shadow" href="javascript:void(0)" routerLink="detail">
+                    <div class="block-content pb-8 bg-image" style="background-image: url('assets/theme/media/photos/photo22.jpg');">
+                      <span class="badge bg-warning fw-bold p-2 text-uppercase">
+                        News
+                      </span>
+                    </div>
+                    <div class="block-content text-center">
+                      <p class="fw-semibold text-dark mb-1">
+                        Learn to Code
+                      </p>
+                      <p class="fs-sm fw-medium text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, facilis.
+                      </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- END Latest Orders + Stats -->
+    </div>
+    <!-- END Page Content -->
+</main>
+<!-- END Main Container -->
