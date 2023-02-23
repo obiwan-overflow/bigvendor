@@ -1,7 +1,7 @@
 <!-- Main Container -->
 <main id="main-container">
     <!-- Hero -->
-    <div class="bg-body-light">
+    <!-- <div class="bg-body-light">
         <div class="content content-full">
             <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
                 <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">Vendor</h1>
@@ -14,7 +14,7 @@
                 </nav>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- END Hero -->
 
     <!-- Page Content -->
@@ -22,11 +22,307 @@
         <!-- Latest Orders + Stats -->
         <div class="row">
             <div class="col-md-12">
-                <!--  Latest Orders -->
-                <div class="block block-rounded block-mode-loading-refresh">
+                <div class="block block-themed">
+                    <div class="block-header bg-theme">
+                      <h3 class="block-title">แบบฟอร์ม</h3>
+                    </div>
+                    <div class="block-content py-3">
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3">
+                                <label for="">วัตถุประสงค์</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">รหัสผู้ขาย / vendor code</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">account group</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">ผู้ขอ / request by</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="">Vendor Type</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="">เลขบัตรประจำตัวประชาชน/ ID No</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">รหัสสาขา/Branch Code</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">เลขประจำตัวผู้เสียภาษี/Tax ID</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">ชื่อสาขา/Branch Description</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="alert alert-info d-flex align-items-center" role="alert">
+                                    <div class="flex-shrink-0">
+                                      <i class="fa fa-fw fa-info-circle"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                      <p class="mb-0">Note: ถ้าไม่ระบุว่าเป็น Vendor Type ประเภทให้บริการ ถือว่าเป็น ประเภทขายสินค้า จะไม่กำหนด WHT ใน Vendor Master ใน SAP</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <h3>English</h3>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="">Vendor Name 1</label>
+                                <input type="text" class="form-control" maxlength="35">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="">Vendor Name 2</label>
+                                <input type="text" class="form-control" maxlength="35">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="">Vendor Name 3</label>
+                                <input type="text" class="form-control" maxlength="35">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="">Search Term</label>
+                                <input type="text" class="form-control" maxlength="35">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">House No</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">Building/Soi/Moo</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">City/Province</label>
+                                <select name="" id="" class="form-select">
+                                    <option value="">Bangkok</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">Country</label>
+                                <select name="" id="" class="form-select">
+                                    <option value="">Thailand</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">District</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">Sub District</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">Postal Code</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>   
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <h3>Thai</h3>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="">ชื่อผู้ขาย 1</label>
+                                <input type="text" class="form-control" maxlength="35">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="">ชื่อผู้ขาย 2</label>
+                                <input type="text" class="form-control" maxlength="35">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="">ชื่อผู้ขาย 3</label>
+                                <input type="text" class="form-control" maxlength="35">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">บ้านเลขที่</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">อาคาร,หมู่บ้าน,ซอย</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">จังหวัด</label>
+                                <select name="" id="" class="form-select">
+                                    <option value="">Bangkok</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">ประเทศ</label>
+                                <select name="" id="" class="form-select">
+                                    <option value="">Thailand</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">อำเภอ/เขต</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">ตำบล/แขวง</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">รหัสไปรษณีย์</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>          
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3">
+                                <label for="">โทรศัพท์/ Telephone no. (1)</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">โทรสาร/ Fax No.</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">โทรศัพท์/ Telephone no. (2)</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">โทรสาร/ Fax No.</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="">E-Mail (แจ้ง payment advice)</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="">E-Mail (ส่ง Auto PO)</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">ผู้ติดต่อ/ Contract Person</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">มือถือ/ Mobile No.</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>  
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <h3>รายละเอียดธนาคาร/ Bank Detail</h3>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">ประเทศที่ตั้งธนาคาร/ Bank Country </label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">สกุลเงิน/ Order currency</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">ชื่อธนาคาร/ Bank Name</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">รหัสธนาคาร/Bank Key</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">ชื่อสาขา/ Bank Branch</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">รหัสสาขา/ Bank Branch Key</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">เลขที่บัญชีธนาคาร/Bank Account No.</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="">ชื่อบัญชี/ Account Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="">ที่อยู่ธนาคาร/Bank Address (Foreign)</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">SWIFT CODE</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">IBAN</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>     
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3">
+                                <label for="" class="text-danger">Term of Payment</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">Created date</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="" class="text-danger">Payment Method</label>
+                                <select name="" id="" class="form-select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="">Created by</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="btn btn-primary btn-hero">Save</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-12">
+                <div class="block block-rounded">
                     <div class="block-header block-header-default">
                         <h3 class="block-title">
-                            detail
+                            แบบฟอร์ม
                         </h3>
                     </div>
                     <div class="block-content py-3">
@@ -81,8 +377,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- END Latest Orders -->
-            </div>
+            </div> -->
         </div>
         <!-- END Latest Orders + Stats -->
     </div>
