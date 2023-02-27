@@ -85,11 +85,51 @@
                     </a>
                 </li>
                 <li class="nav-main-heading">Admin</li>
-                <li class="nav-main-item">
+                <!-- <li class="nav-main-item">
                     <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="admin/vendor">
                         <i class="nav-main-link-icon fa fa-file"></i>
                         <span class="nav-main-link-name">vendor</span>
                     </a>
+                </li> -->
+                <li class="nav-main-item">
+                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false"
+                        href="#">
+                        <i class="nav-main-link-icon fa fa-vector-square"></i>
+                        <span class="nav-main-link-name">Vendor</span>
+                    </a>
+                    <ul class="nav-main-submenu">
+                        <li class="nav-main-item">
+                            <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
+                                aria-expanded="false" href="#">
+                                <span class="nav-main-link-name">APPROVE VENDOR LIST(AVL)</span>
+                            </a>
+                            <ul class="nav-main-submenu">
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="admin/vendor/1">
+                                        <span class="nav-main-link-name">AVL for Equipment</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="admin/vendor/2">
+                                        <span class="nav-main-link-name">AVL for Service</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
+                                aria-expanded="false" href="#">
+                                <span class="nav-main-link-name">NEW VENDOR REGISTRATION</span>
+                            </a>
+                            <ul class="nav-main-submenu">
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="admin/vendor/3">
+                                        <span class="nav-main-link-name">Vendor registration</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-main-item">
                     <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="admin/user">
@@ -108,65 +148,6 @@
                         <i class="nav-main-link-icon fa fa-file"></i>
                         <span class="nav-main-link-name">analysis</span>
                     </a>
-                </li>
-                <!-- <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
-                        aria-expanded="false" href="#">
-                        <i class="nav-main-link-icon fa fa-border-all"></i>
-                        <span class="nav-main-link-name">Vendor</span>
-                    </a>
-                    <ul class="nav-main-submenu">
-                        <li class="nav-main-item">
-                            <a class="nav-main-link" href="be_blocks_styles.html">
-                                <span class="nav-main-link-name">Styles</span>
-                            </a>
-                        </li>
-                        <li class="nav-main-item">
-                            <a class="nav-main-link" href="be_blocks_options.html">
-                                <span class="nav-main-link-name">Options</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li> -->
-                <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false"
-                        href="#">
-                        <i class="nav-main-link-icon fa fa-vector-square"></i>
-                        <span class="nav-main-link-name">Vendor</span>
-                    </a>
-                    <ul class="nav-main-submenu">
-                        <li class="nav-main-item">
-                            <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
-                                aria-expanded="false" href="#">
-                                <span class="nav-main-link-name">APPROVE VENDOR LIST(AVL)</span>
-                            </a>
-                            <ul class="nav-main-submenu">
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_layout_page_default.html">
-                                        <span class="nav-main-link-name">AVL for Equipment</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_layout_page_flipped.html">
-                                        <span class="nav-main-link-name">AVL for Service</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-main-item">
-                            <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
-                                aria-expanded="false" href="#">
-                                <span class="nav-main-link-name">NEW VENDOR REGISTRATION</span>
-                            </a>
-                            <ul class="nav-main-submenu">
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_layout_content_main_full_width.html">
-                                        <span class="nav-main-link-name">Vendor registration</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
                 </li>
             </ul>
         </div>

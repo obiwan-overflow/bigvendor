@@ -24,6 +24,13 @@ import { EvaluationListsComponent } from './evaluation/evaluation-lists/evaluati
 import { EvaluationAddComponent } from './evaluation/evaluation-add/evaluation-add.component';
 import { EvaluationPreviewComponent } from './evaluation/evaluation-preview/evaluation-preview.component';
 import { EvaluationQuestionComponent } from './evaluation/evaluation-question/evaluation-question.component';
+import { VendorAddComponent } from './vendor/vendor-add/vendor-add.component';
+import { ReportComponent } from './procurement/report/report.component';
+import { ReportListsComponent } from './procurement/report-lists/report-lists.component';
+import { TypeComponent } from './question/type/type.component';
+import { QuestionDetailComponent } from './question/question-detail/question-detail.component';
+import { QuestionPreviewComponent } from './question/question-preview/question-preview.component';
+import { QuestionListsComponent } from './question/question-lists/question-lists.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +56,13 @@ import { EvaluationQuestionComponent } from './evaluation/evaluation-question/ev
     EvaluationAddComponent,
     EvaluationPreviewComponent,
     EvaluationQuestionComponent,
+    VendorAddComponent,
+    ReportComponent,
+    ReportListsComponent,
+    TypeComponent,
+    QuestionDetailComponent,
+    QuestionPreviewComponent,
+    QuestionListsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,115 @@
+<!-- Main Container -->
+<main id="main-container">
+    <!-- Hero -->
+    <div class="bg-body-light">
+        <div class="content content-full">
+            <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+                <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">Procurement Report</h1>
+                <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Procurement Report</li>
+                        <li class="breadcrumb-item active" aria-current="page">lists</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- END Hero -->
+
+    <!-- Page Content -->
+    <div class="content">
+        <!-- Latest Orders + Stats -->
+        <div class="row">
+            <div class="col-md-12">
+                <!--  Latest Orders -->
+                <div class="block block-rounded block-mode-loading-refresh">
+                    <div class="block-header block-header-default">
+                        <h3 class="block-title">
+                            {{title}} lists
+                        </h3>
+                    </div>
+                    <div class="block-content">
+                        <table class="table table-striped table-hover table-bordered" *ngIf="id == 1">
+                            <thead>
+                                <tr>
+                                    <th>Buyer</th>
+                                    <th>PO 5 days</th>
+                                    <th>%PO 5 days</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SAH</td>
+                                    <td>1,549</td>
+                                    <td>95%</td>
+                                </tr>
+                                <tr>
+                                    <td>MUS</td>
+                                    <td>439</td>
+                                    <td>98%</td>
+                                </tr>
+                                <tr>
+                                    <td>JEO</td>
+                                    <td>190</td>
+                                    <td>93%</td>
+                                </tr>
+                                <tr>
+                                    <td>TAT</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SIH</td>
+                                    <td>193</td>
+                                    <td>66%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-striped table-hover table-bordered" *ngIf="id == 2">
+                            <thead>
+                                <tr>
+                                    <th>Buyer</th>
+                                    <th>PR item Q1</th>
+                                    <th>PO Ontime Q1</th>
+                                    <th>% Ontime Q1</th>                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-striped table-hover table-bordered" *ngIf="id == 3">
+                            <thead>
+                                <tr>
+                                    <th>Vendor No.</th>
+                                    <th>Vendor Name</th>
+                                    <th>No. PO</th>
+                                    <th>Count</th>       
+                                    <th>PO value</th>                             
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- END Latest Orders -->
+            </div>
+        </div>
+        <!-- END Latest Orders + Stats -->
+    </div>
+    <!-- END Page Content -->
+</main>
+<!-- END Main Container -->
