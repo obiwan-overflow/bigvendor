@@ -6,7 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./vendor-lists.component.scss']
 })
 export class VendorListsComponent {
-  fakeArray = new Array(10);
+  dataVendor = [
+    {name:"test company",status:"pending",date:"2"},
+    {name:"test company",status:"pending",date:"3"},
+    {name:"test company",status:"Updated By Vendor",date:""},
+    {name:"test company",status:"pending",date:"1"},
+    {name:"test company",status:"Updated By Vendor",date:""},
+    {name:"test company",status:"Updated By Vendor",date:""},
+    {name:"test company",status:"pending",date:"1"},
+    {name:"test company",status:"pending",date:"1"},
+    {name:"test company",status:"Updated By Vendor",date:""},
+    {name:"test company",status:"Updated By Vendor",date:""},
+  ]
   ngOnInit() {
 
   }

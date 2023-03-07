@@ -27,14 +27,22 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@kolkov/angular-editor/assets/",
+                "output": "./assets/fonts/"
+              }
             ],
             "styles": [
               "src/assets/theme/css/dashmix.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/summernote/dist/summernote-lite.min.css"
             ],
             "scripts": [
-              "src/assets/theme/js/dashmix.app.min.js"
+              "src/assets/theme/js/dashmix.app.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/summernote/dist/summernote-lite.min.js"
             ]
           },
           "configurations": {

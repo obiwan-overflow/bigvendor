@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-$colorTheme: #009A44;
-
+$colorTheme: #66c292;
+// html 
+html,body {
+    font-family:  Poppins,Helvetica,"sans-serif";
+}
 
 // header
 .bg-header-dark {

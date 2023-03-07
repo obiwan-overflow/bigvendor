@@ -26,6 +26,12 @@ import { TypeComponent } from './question/type/type.component';
 import { QuestionDetailComponent } from './question/question-detail/question-detail.component';
 import { QuestionPreviewComponent } from './question/question-preview/question-preview.component';
 import { QuestionListsComponent } from './question/question-lists/question-lists.component';
+import { AvlForEquipmentComponent } from './vendor/avl-for-equipment/avl-for-equipment.component';
+import { AvlForServiceComponent } from './vendor/avl-for-service/avl-for-service.component';
+import { VendorFormComponent } from './vendor/vendor-form/vendor-form.component';
+import { QuestionnaireComponent } from './question/questionnaire/questionnaire.component';
+import { QuestionAddComponent } from './question/question-add/question-add.component';
+import { QuestionEditComponent } from './question/question-edit/question-edit.component';
 
 const routes: Routes = [
   {
@@ -35,11 +41,21 @@ const routes: Routes = [
       // Add child routes for the other pages here
       { path: '', component: DashboardComponent },
       { path: 'dashboard', component: DashboardComponent },
-      { path: 'admin/vendor/:id', component: VendorListsComponent },
+      { path: 'admin/vendor/registration', component: VendorListsComponent },
+      { path: 'admin/vendor/registration/add', component: VendorAddComponent },
+      { path: 'admin/vendor/registration/view', component: VendorAddComponent },
+      { path: 'admin/vendor/registration/form', component: VendorFormComponent },
       { path: 'admin/vendor/detail', component: VendorDetailComponent },
       { path: 'admin/vendor/detail/evaluation', component: EvaluationShowComponent },
-      { path: 'admin/vendor/:id/add', component: VendorAddComponent },
-      { path: 'admin/vendor/:id/add/form', component: VendorDetailComponent },
+      // { path: 'admin/vendor/:id/add', component: VendorAddComponent },
+      // { path: 'admin/vendor/view/:id', component: VendorAddComponent },
+      // { path: 'admin/vendor/:id/form', component: VendorDetailComponent },
+      { path: 'admin/vendor/avl-for-equipment', component: AvlForEquipmentComponent },
+      { path: 'admin/vendor/avl-for-equipment/view', component: VendorAddComponent },
+      { path: 'admin/vendor/avl-for-equipment/form', component: VendorFormComponent },
+      { path: 'admin/vendor/avl-for-service', component: AvlForServiceComponent },
+      { path: 'admin/vendor/avl-for-service/view', component: VendorAddComponent },
+      { path: 'admin/vendor/avl-for-service/form', component: VendorFormComponent },
       { path: 'admin/user', component: UserListsComponent },
       { path: 'admin/user/add', component: UserAddComponent },
       { path: 'admin/news', component: NewsListsComponent },
@@ -47,12 +63,15 @@ const routes: Routes = [
       { path: 'admin/analysis', component: AnalysisComponent },
       { path: 'admin/analysis/evaluation', component: EvaluationListsComponent },
       { path: 'admin/analysis/evaluation/add', component: EvaluationAddComponent },
-      { path: 'admin/analysis/evaluation/add/question', component: EvaluationQuestionComponent },
-      { path: 'admin/analysis/evaluation/add/question/preview', component: EvaluationPreviewComponent },
+      { path: 'admin/analysis/evaluation/question', component: EvaluationQuestionComponent },
+      { path: 'admin/analysis/evaluation/question/preview', component: EvaluationPreviewComponent },
       { path: 'admin/analysis/question', component: TypeComponent },
-      { path: 'admin/analysis/question/detail', component: QuestionDetailComponent },
-      { path: 'admin/analysis/question/detail/preview', component: QuestionPreviewComponent },
-      { path: 'admin/analysis/question/detail/preview/lists', component: QuestionListsComponent },
+      // { path: 'admin/analysis/question/detail', component: QuestionDetailComponent },
+      { path: 'admin/question/lists', component: QuestionListsComponent },
+      { path: 'admin/question/lists/add', component: QuestionAddComponent },
+      { path: 'admin/question/lists/detail/:id', component: QuestionEditComponent },
+      { path: 'admin/question/lists/detail/:id/preview', component: QuestionPreviewComponent },
+      { path: 'admin/question/lists/detail/:id/preview/edit', component: QuestionListsComponent },
       { path: 'admin/analysis/report', component: ReportComponent },
       { path: 'admin/analysis/report/lists/:id', component: ReportListsComponent },
       { path: 'news', component: NewsComponent },
@@ -61,6 +80,7 @@ const routes: Routes = [
       { path: 'vendor', component: VendorComponent },
       { path: 'vendor/detail', component: VendorDetailComponent },
       { path: 'vendor/detail/evaluation', component: EvaluationShowComponent },
+      { path: 'questionnaire', component: QuestionnaireComponent }
     ]
   },
   { path: 'sign-in', component: SignInComponent }

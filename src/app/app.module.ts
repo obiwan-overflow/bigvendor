@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxSummernoteModule } from 'ngx-summernote';
+import { HttpClientModule } from '@angular/common/http';
+import { AngularEditorModule } from '@kolkov/angular-editor';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +34,12 @@ import { TypeComponent } from './question/type/type.component';
 import { QuestionDetailComponent } from './question/question-detail/question-detail.component';
 import { QuestionPreviewComponent } from './question/question-preview/question-preview.component';
 import { QuestionListsComponent } from './question/question-lists/question-lists.component';
+import { AvlForEquipmentComponent } from './vendor/avl-for-equipment/avl-for-equipment.component';
+import { AvlForServiceComponent } from './vendor/avl-for-service/avl-for-service.component';
+import { VendorFormComponent } from './vendor/vendor-form/vendor-form.component';
+import { QuestionnaireComponent } from './question/questionnaire/questionnaire.component';
+import { QuestionEditComponent } from './question/question-edit/question-edit.component';
+import { QuestionAddComponent } from './question/question-add/question-add.component';
 
 @NgModule({
   declarations: [
@@ -63,10 +72,19 @@ import { QuestionListsComponent } from './question/question-lists/question-lists
     QuestionDetailComponent,
     QuestionPreviewComponent,
     QuestionListsComponent,
+    AvlForEquipmentComponent,
+    AvlForServiceComponent,
+    VendorFormComponent,
+    QuestionnaireComponent,
+    QuestionEditComponent,
+    QuestionAddComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgxSummernoteModule,
+    AngularEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

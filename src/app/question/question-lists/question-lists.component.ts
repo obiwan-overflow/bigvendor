@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./question-lists.component.scss']
 })
 export class QuestionListsComponent {
-  
+  fakeArray = new Array(3);
 }
