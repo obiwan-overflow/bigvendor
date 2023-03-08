@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgxSummernoteModule } from 'ngx-summernote';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularEditorModule } from '@kolkov/angular-editor';
+import { StarRatingModule } from 'angular-star-rating';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,6 +41,11 @@ import { VendorFormComponent } from './vendor/vendor-form/vendor-form.component'
 import { QuestionnaireComponent } from './question/questionnaire/questionnaire.component';
 import { QuestionEditComponent } from './question/question-edit/question-edit.component';
 import { QuestionAddComponent } from './question/question-add/question-add.component';
+import { VendorSubmemberListsComponent } from './vendor/vendor-submember-lists/vendor-submember-lists.component';
+import { VendorSubmemberAddComponent } from './vendor/vendor-submember-add/vendor-submember-add.component';
+import { ProjectListsComponent } from './projects/project-lists/project-lists.component';
+import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
+import { ProjectAddComponent } from './projects/project-add/project-add.component';
 
 @NgModule({
   declarations: [
@@ -78,13 +84,19 @@ import { QuestionAddComponent } from './question/question-add/question-add.compo
     QuestionnaireComponent,
     QuestionEditComponent,
     QuestionAddComponent,
+    VendorSubmemberListsComponent,
+    VendorSubmemberAddComponent,
+    ProjectListsComponent,
+    ProjectDetailComponent,
+    ProjectAddComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NgxSummernoteModule,
-    AngularEditorModule
+    AngularEditorModule,
+    StarRatingModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

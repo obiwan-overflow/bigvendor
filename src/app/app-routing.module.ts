@@ -32,6 +32,11 @@ import { VendorFormComponent } from './vendor/vendor-form/vendor-form.component'
 import { QuestionnaireComponent } from './question/questionnaire/questionnaire.component';
 import { QuestionAddComponent } from './question/question-add/question-add.component';
 import { QuestionEditComponent } from './question/question-edit/question-edit.component';
+import { VendorSubmemberListsComponent } from './vendor/vendor-submember-lists/vendor-submember-lists.component';
+import { VendorSubmemberAddComponent } from './vendor/vendor-submember-add/vendor-submember-add.component';
+import { ProjectListsComponent } from './projects/project-lists/project-lists.component';
+import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
+import { ProjectAddComponent } from './projects/project-add/project-add.component';
 
 const routes: Routes = [
   {
@@ -63,6 +68,8 @@ const routes: Routes = [
       { path: 'admin/analysis', component: AnalysisComponent },
       { path: 'admin/analysis/evaluation', component: EvaluationListsComponent },
       { path: 'admin/analysis/evaluation/add', component: EvaluationAddComponent },
+      { path: 'admin/analysis/evaluation/add/question', component: EvaluationQuestionComponent },
+      { path: 'admin/analysis/evaluation/edit', component: EvaluationAddComponent },
       { path: 'admin/analysis/evaluation/question', component: EvaluationQuestionComponent },
       { path: 'admin/analysis/evaluation/question/preview', component: EvaluationPreviewComponent },
       { path: 'admin/analysis/question', component: TypeComponent },
@@ -77,10 +84,16 @@ const routes: Routes = [
       { path: 'news', component: NewsComponent },
       { path: 'news/detail', component: NewsDetailComponent },
       { path: 'evaluation', component: EvaluationShowComponent },
-      { path: 'vendor', component: VendorComponent },
+      { path: 'vendor/profile', component: VendorComponent },
       { path: 'vendor/detail', component: VendorDetailComponent },
       { path: 'vendor/detail/evaluation', component: EvaluationShowComponent },
-      { path: 'questionnaire', component: QuestionnaireComponent }
+      { path: 'vendor/submember', component: VendorSubmemberListsComponent },
+      { path: 'vendor/submember/add', component: VendorSubmemberAddComponent },
+      { path: 'vendor/submember/edit', component: VendorSubmemberAddComponent },
+      { path: 'questionnaire', component: QuestionnaireComponent },
+      { path: 'project', component: ProjectListsComponent },
+      { path: 'project/add', component: ProjectAddComponent },
+      { path: 'project/detail', component: ProjectDetailComponent }
     ]
   },
   { path: 'sign-in', component: SignInComponent }

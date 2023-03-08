@@ -80,7 +80,7 @@
                 </li>
                 <li class="nav-main-heading">vendor</li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="vendor">
+                    <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="vendor/profile">
                         <i class="nav-main-link-icon fa fa-file"></i>
                         <span class="nav-main-link-name">Vendor</span>
                     </a>
@@ -89,6 +89,12 @@
                     <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="news">
                         <i class="nav-main-link-icon fa fa-file"></i>
                         <span class="nav-main-link-name">News</span>
+                    </a>
+                </li>
+                <li class="nav-main-item">
+                    <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="vendor/submember">
+                        <i class="nav-main-link-icon fa fa-file"></i>
+                        <span class="nav-main-link-name">Vendor SubMember</span>
                     </a>
                 </li>
                 <li class="nav-main-heading">Admin</li>
@@ -100,7 +106,7 @@
                 </li> -->
                 <li class="nav-main-item">
                     <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
-                        <i class="nav-main-link-icon fa fa-vector-square"></i>
+                        <i class="nav-main-link-icon fa fa-border-all"></i>
                         <span class="nav-main-link-name">Vendor</span>
                     </a>
                     <ul class="nav-main-submenu">
@@ -150,6 +156,30 @@
                     </a>
                 </li>
                 <li class="nav-main-item">
+                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
+                      <i class="nav-main-link-icon fa fa-border-all"></i>
+                      <span class="nav-main-link-name">Analysis</span>
+                    </a>
+                    <ul class="nav-main-submenu">
+                      <li class="nav-main-item">
+                        <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="admin/analysis">
+                          <span class="nav-main-link-name">Analysis</span>
+                        </a>
+                      </li>
+                      <li class="nav-main-item">
+                        <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="admin/question/lists">
+                          <span class="nav-main-link-name">Questionnaire Lists</span>
+                        </a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="nav-main-item">
+                    <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="project">
+                        <i class="nav-main-link-icon fa fa-file"></i>
+                        <span class="nav-main-link-name">Projects</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-main-item">
                     <a class="nav-main-link" href="javascript:void(0)" [routerLinkActive]="'active'" routerLink="admin/analysis">
                         <i class="nav-main-link-icon fa fa-file"></i>
                         <span class="nav-main-link-name">Analysis</span>
@@ -160,7 +190,7 @@
                         <i class="nav-main-link-icon fa fa-file"></i>
                         <span class="nav-main-link-name">Questionnaire Lists</span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
         <!-- END Side Navigation -->

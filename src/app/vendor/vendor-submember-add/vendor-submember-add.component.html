@@ -4,10 +4,10 @@
     <div class="bg-body-light">
         <div class="content content-full">
             <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
-                <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">News Add</h1>
+                <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">User Permission Add</h1>
                 <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item">News</li>
+                        <li class="breadcrumb-item">user permission</li>
                         <li class="breadcrumb-item">lists</li>
                         <li class="breadcrumb-item active" aria-current="page">add</li>
                     </ol>
@@ -32,35 +32,26 @@
                     <div class="block-content py-3">
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="">Image Cover</label>
-                                <input type="file" class="form-control">
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="">Subject</label>
+                                <label for="">Name</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="">Date Post</label>
-                                <input type="date" class="form-control">
+                                <label for="">Username</label>
+                                <input type="text" class="form-control">
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="">Date End</label>
-                                <input type="date" class="form-control">
+                                <label for="">Password</label>
+                                <input type="password" class="form-control">
                             </div>
-                            <div class="col-md-12 mb-3">
-                                <label for="">Detail</label>
-                                <!-- <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea> -->
-                                <angular-editor placeholder="Enter text here..." [config]="editorConfig"></angular-editor>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <label for="">Picture</label>
-                                <input type="file" class="form-control">
+                            <div class="col-md-6 mb-3">
+                                <label for="">Confirm Password</label>
+                                <input type="password" class="form-control">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <button class="btn btn-success btn-hero me-1"><i class="fas fa-save"></i> Submit</button>
-                                <a href="#" routerLink="/admin/news" class="btn btn-danger btn-hero"><i class="fas fa-cancel"></i> Cannel</a>
+                                <a href="#" routerLink="../" class="btn btn-danger btn-hero"><i class="fas fa-cancel"></i> Cannel</a>
                             </div>
                         </div>
                     </div>
